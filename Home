@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body bg="Blue" background="F:\Mouser Website\Doge.jpg" width="100%" height="100%"> 
+<head>
+<Title align="center">Mrs.Mouser Is Awesome</title>
+</script>
+<link rel="icon" type="image/png" href="http://dogespin.com/favicon.ico">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<meta property="og:title" content="DogeSpin">
+<meta property="og:site_name" content="DogeSpin">
+<meta name="description" content="Such doge spinning">
+<meta property="og:description" content="Such doge spinning">
+<meta property="og:image" content="http://dogespin.com/dogecoin.png">
+</head>
+<body>
+	<script type="text/javascript">
+
+  var dogesrc="https://epicmafia.com/uploads/families/6969_teeny.jpg"
+  var no = 3;
+  var hidedogetime = 0;
+  var dogedistance = "pageheight";
+
+
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+	function iecompattest(){
+	return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+	}
+
+  var dx, xp, yp;
+  var am, stx, sty;
+  var i, doc_width = 800, doc_height = 1200; 
+  
+  if (ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = iecompattest().clientWidth;
+    doc_height = iecompattest().clientHeight;
+  }
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  dogesrc=(dogesrc.indexOf("dogespin.com")!=-1)? "dogecoin.png" : dogesrc
+  for (i = 0; i < no; ++ i) {  
+    dx[i] = 0;
+    xp[i] = Math.random()*(doc_width-50);
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;
+    stx[i] = 0.02 + Math.random()/10;
+    sty[i] = 0.7 + Math.random();
+		if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dogespin.com\/donate\"><img src='"+dogesrc+"' border=\"0\"><\/a><\/div>");
+      } else {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dogespin.com\/donate\"><img src='"+dogesrc+"' border=\"0\"><\/a><\/div>");
+      }
+    }
+  }
+
+  function dogeIE_NS6() {  
+    doc_width = ns6up?window.innerWidth-20 : iecompattest().clientWidth-20;
+		doc_height=(window.innerHeight && dogedistance=="windowheight")? window.innerHeight : (ie4up && dogedistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && dogedistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+    for (i = 0; i < no; ++ i) {
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+      }
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+    }
+    dogetimer=setTimeout("dogeIE_NS6()", 10);
+  }
+
+	function hidedoge(){
+		if (window.dogetimer) clearTimeout(dogetimer)
+		for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
+	}
+		
+
+if (ie4up||ns6up){
+    dogeIE_NS6();
+		if (hidedogetime>0)
+		setTimeout("hidedoge()", hidedogetime*2000)
+		}
+
+		</script>
+	</body>
+</head>
+	<h1 color="yellow" align="center" ><font face="Comic sans MS" size="7" color="green">Reasons Ms.Mouser is amazing</font></h1>
+<body onload="javascript:Init()" align="left" bgcolor="blue" height="200" width="200">
+<object width="350" height="256"><param name="movie" value="loituma.swf">
+<embed src="loituma.swf" width="350" height="256"></object>
+</body>
+<div>
+	<ul align="bottom"> <font size="7">
+		<ul align="bottom"><b> <font face="Comic sans MS" size="7" color="Purple">She is very science</ul>
+		<ul align="bottom"> <font face="Comic sans MS" size="7" color="Purple" >Wow Math</ul>
+		<ul> <font face="Comic sans MS" size="7" color="Purple">Much good chemistering</b></ul>
+	</ul>
+</div>
+
